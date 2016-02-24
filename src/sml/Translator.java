@@ -90,8 +90,8 @@ public class Translator {
                 return new AddInstruction(label, r, s1, s2);
             case "lin":
                 r = scanInt();
-                s1 = scanInt();
-                return new LinInstruction(label, r, s1);
+                x = scanInt();
+                return new LinInstruction(label, r, x);
             case "sub":
                 r = scanInt();
                 s1 = scanInt();
@@ -108,8 +108,8 @@ public class Translator {
                 s2 = scanInt();
                 return new DivInstruction(label, r, s1, s2);
             case "out":
-                r = scanInt();
-                return new OutInstruction(label, r);
+                s1 = scanInt();
+                return new OutInstruction(label, s1);
         }
 
         // You will have to write code here for the other instructions.
