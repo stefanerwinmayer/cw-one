@@ -28,4 +28,8 @@ public abstract class Instruction {
     // Execute this instruction on machine m.
 
     public abstract void execute(Machine m);
+
+    public String getLabel() {
+        return label;
+    }
 }
