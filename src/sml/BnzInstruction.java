@@ -34,6 +34,6 @@ public class BnzInstruction extends Instruction {
 
     @Override
     public String toString() {
-        return super.toString() + " register " + register + " value is " + label2;
+        return super.toString() + " register " + register + " if not 0 go to " + label2;
     }
 }
